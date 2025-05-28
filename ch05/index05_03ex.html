@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table colspan & rowspan</title>
+
+    <!-- 내부 스타일 시트 -->
+     <style>
+        * {
+            text-align: center;
+        }
+        table{
+            width: auto;
+            margin-left: auto;
+            margin-right: auto;
+            }
+     </style>
+</head>
+<body>
+    <h2>시간표 예제</h2>
+    <table border="2">
+        <thead>
+            <th bgcolor="#D9E5FF">시간</th>
+            <th bgcolor="#D9E5FF">월요일</th>
+            <th  bgcolor="#D9E5FF">화요일</th>
+            <th bgcolor="#D9E5FF">수요일</th>
+            <th bgcolor="#D9E5FF">목요일</th>
+            <th bgcolor="#D9E5FF">금요일</th>
+            <th bgcolor="#D9E5FF">토요일</th>
+            <th bgcolor="#D9E5FF">일요일</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>09:00 - 10:00</td>
+                <!-- colsapn : 열 2개를 합침 -->
+                <td colspan="2">HTML/CSS 수업</td>
+                <td >자습</td>
+                <td rowspan="3">예습</td>
+                <td rowspan="3" bgcolor="#27f1bf">체육대회</td>
+                <td rowspan="2">휴일</td>
+                <td rowspan="2">휴일</td>
+            </tr>
+            <tr>
+                <td>10:00 - 11:00</td>
+                <td>JS 수업</td>
+                <td rowspan="2">프로젝트 작업</td>
+                <td>자습</td>
+                
+            </tr>
+            <tr>
+                <td>11:00 - 12:00</td>
+                <td>JS 실습</td>
+                <td rowspan="2">강의실청소</td>
+                <td colspan="2">자격증공부</td>
+            </tr>
+            <tr>
+                <td>12:00 - 13:00</td>
+                <td colspan="2">점심 시간</td>
+                <td colspan="2">점심 시간</td>
+                <td colspan="2">휴일</td>
+            </tr>
+        </tbody>
+        
+    </table>
+</body>
+</html>

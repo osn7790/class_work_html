@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>시간표</title>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      text-align: center;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px;
+    }
+    th {
+      background-color: #f8f8f8;
+    }
+    .time-col {
+      background-color: coral;
+      font-weight: bold;
+    }
+    .lunch {
+      background-color: #d4af37;
+    }
+    .free {
+      background-color: #800020;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h2>시간표</h2>
+  
+  <!-- 요일은 월요일부터 일요일까지 테이블 생성 -->
+  <!-- 시간은 정시 간격으로, 09시부터 18시까지 -->
+   <!-- none이라는 클래스 태그를 가지고 안녕하세요 라는 버튼 생성, 클릭시 alert -->
+    <button class="none" onclick="alert('안녕하세요')">">안녕하세요</button>
+   <table>
+    <thead>
+        <tr>
+            <th>
+                시간
+            </th>
+        <th>
+            월요일
+        </th>
+        <th>
+            화요일
+        </th>
+        <th>
+            수요일
+        </th>
+        <th>
+            목요일
+        </th>
+        <th>
+            금요일
+        </th>
+        <th>
+            토요일
+        </th>
+        <th>
+            일요일
+        </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="time-col">09:00 - 10:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time-col">10:00 - 11:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time-col">11:00 - 12:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time-col lunch">12:00 - 13:00</td>
+            <td class="lunch">점심시간</td>
+            <td class="lunch">점심시간</td>
+            <td class="lunch">점심시간</td>
+            <td class="lunch">점심시간</td>
+            <td class="lunch">점심시간</td>
+            <td class="lunch">점심시간</td>
+            <td class="lunch">점심시간</td>
+        </tr>
+        <tr>
+            <td class="time-col">13:00 - 14:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="time-col">14:00 - 15:00</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+   </table>
+</body>
+</html>
